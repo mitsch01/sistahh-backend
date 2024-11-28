@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "impressums",
+  "info": {
+    "singularName": "impressum",
+    "pluralName": "impressums",
+    "displayName": "Impressum",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "anneNameEmail": {
+      "type": "string",
+      "required": true
+    },
+    "anneAdresse": {
+      "type": "string",
+      "required": true
+    },
+    "fotografName": {
+      "type": "string"
+    },
+    "webdevName": {
+      "type": "string"
+    },
+    "fotografLink": {
+      "type": "blocks"
+    },
+    "webdevLink": {
+      "type": "blocks"
+    }
+  }
+}

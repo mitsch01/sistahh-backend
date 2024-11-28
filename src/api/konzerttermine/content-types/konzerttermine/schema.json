@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "konzerttermines",
+  "info": {
+    "singularName": "konzerttermine",
+    "pluralName": "konzerttermines",
+    "displayName": "Konzerttermine",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Konzerttermine": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tabelle.konzerttermine"
+    }
+  }
+}
