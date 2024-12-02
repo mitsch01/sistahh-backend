@@ -1,11 +1,39 @@
-module.exports =
-  [
-    {
-      name: "strapi::cors",
-      config: {
-        origin: ["https://sistahh.de"],
-        methods: ["GET", "POST", "PUT", "DELETE"]
+module.exports = [
+  // Logger middleware
+  "strapi::logger",
+
+  // Error handling middleware
+  "strapi::errors",
+
+  // Security middleware
+  {
+    name: "strapi::security",
+    config: {
+      contentSecurityPolicy: {
+        directives: {
+          "default-src": ["'self'", "https:"],
+          "img-src": ["'self'", "data:", "blob:", "https://sistahh.de"],
+          "media-src": ["'self'", "data:", "blob:", "https://sistahh.de"],
+          upgradeInsecureRequests: null
+        }
       }
     }
-  ],
-  ["strapi::logger", "strapi::errors", "strapi::security", "strapi::cors", "strapi::poweredBy", "strapi::query", "strapi::body", "strapi::session", "strapi::favicon", "strapi::public"]
+  },
+
+  // CORS middleware
+  {
+    name: "strapi::cors",
+    config: {
+      origin: ["https://sistahh.de"],
+      methods: ["GET", "POST", "PUT", "DELETE"]
+    }
+  },
+
+  // Other required middlewares
+  "strapi::poweredBy",
+  "strapi::query",
+  "strapi::body",
+  "strapi::session",
+  "strapi::favicon",
+  "strapi::public"
+]
