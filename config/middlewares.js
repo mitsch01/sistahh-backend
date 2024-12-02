@@ -12,8 +12,8 @@ module.exports = [
       contentSecurityPolicy: {
         directives: {
           "default-src": ["'self'", "https:"],
-          "img-src": ["'self'", "data:", "blob:", "https://sistahh.de"],
-          "media-src": ["'self'", "data:", "blob:", "https://sistahh.de"],
+          "img-src": ["'self'", "data:", "blob:", "https://www.sistahh.de"],
+          "media-src": ["'self'", "data:", "blob:", "https://www.sistahh.de"],
           upgradeInsecureRequests: null
         }
       }
