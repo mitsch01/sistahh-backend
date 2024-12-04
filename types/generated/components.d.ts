@@ -13,6 +13,7 @@ export interface TabelleKonzerttermine extends Struct.ComponentSchema {
     location: Schema.Attribute.String & Schema.Attribute.Required;
     time: Schema.Attribute.Time & Schema.Attribute.Required;
     ticketLink: Schema.Attribute.String;
+    titel: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
