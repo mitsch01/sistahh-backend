@@ -25,6 +25,10 @@
     },
     "ticketLink": {
       "type": "string"
+    },
+    "titel": {
+      "type": "string",
+      "required": true
     }
   }
 }

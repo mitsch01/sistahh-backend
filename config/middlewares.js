@@ -12,8 +12,8 @@ module.exports = [
       contentSecurityPolicy: {
         directives: {
           "default-src": ["'self'", "https:"],
-          "img-src": ["'self'", "data:", "blob:", "https://www.sistahh.de"],
-          "media-src": ["'self'", "data:", "blob:", "https://www.sistahh.de"],
+          "img-src": ["'self'", "data:", "blob:", "https://www.sistahh.de/"],
+          "media-src": ["'self'", "data:", "blob:", "https://www.sistahh.de/"],
           upgradeInsecureRequests: null
         }
       }
@@ -24,7 +24,7 @@ module.exports = [
   {
     name: "strapi::cors",
     config: {
-      origin: ["https://sistahh.de"],
+      origin: ["https://www.sistahh.de/"],
       methods: ["GET", "POST", "PUT", "DELETE"]
     }
   },
