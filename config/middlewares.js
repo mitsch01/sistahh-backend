@@ -24,7 +24,7 @@ module.exports = [
   {
     name: "strapi::cors",
     config: {
-      origin: ["https://www.sistahh.de/"],
+      origin: ["https://sistahh.de/", "https://api.sistahh.de/"],
       methods: ["GET", "POST", "PUT", "DELETE"]
     }
   },
