@@ -1,17 +1,5 @@
 import type { Struct, Schema } from '@strapi/strapi';
 
-export interface FeaturesTestimonial extends Struct.ComponentSchema {
-  collectionName: 'components_features_testimonials';
-  info: {
-    displayName: 'Testimonial';
-    icon: 'cog';
-  };
-  attributes: {
-    Name: Schema.Attribute.String;
-    Zitat: Schema.Attribute.Text;
-  };
-}
-
 export interface TabelleKonzerttermine extends Struct.ComponentSchema {
   collectionName: 'components_tabelle_konzerttermines';
   info: {
@@ -29,11 +17,23 @@ export interface TabelleKonzerttermine extends Struct.ComponentSchema {
   };
 }
 
+export interface FeaturesTestimonial extends Struct.ComponentSchema {
+  collectionName: 'components_features_testimonials';
+  info: {
+    displayName: 'Testimonial';
+    icon: 'cog';
+  };
+  attributes: {
+    Name: Schema.Attribute.String;
+    Zitat: Schema.Attribute.Text;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
-      'features.testimonial': FeaturesTestimonial;
       'tabelle.konzerttermine': TabelleKonzerttermine;
+      'features.testimonial': FeaturesTestimonial;
     }
   }
 }

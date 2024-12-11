@@ -11,7 +11,6 @@ module.exports = [
     config: {
       contentSecurityPolicy: {
         directives: {
-          "script-src": ["'self'", "'unsafe-inline'"],
           "default-src": ["'self'", "https:"],
           "img-src": ["'self'", "data:", "blob:", "https://www.sistahh.de/"],
           "media-src": ["'self'", "data:", "blob:", "https://www.sistahh.de/"],
